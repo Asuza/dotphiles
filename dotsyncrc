@@ -64,8 +64,9 @@ git/gitattributes
 #task/taskrc
 tmux/tmux.conf
 #tmux/tmuxinator
-#vim/dotvim:.vim
+vim/vim
 vim/vimrc
+vim/vimrc.before
 #vim/gvimrc
 #wget/wgetrc
 #zsh/fasdrc
