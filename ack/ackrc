@@ -41,4 +41,4 @@ rdoc=.rdoc
 --actionscript
 --objc
 --ignore-dir=.idea
-
+--perl
