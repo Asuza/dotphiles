@@ -19,13 +19,13 @@
 
 [color]
     branch = always
-    diff = always
+    diff = auto
     grep = always
     interactive = always
     pager = true
     showbranch = auto
     status = auto
-    ui = always
+    ui = auto
 
 [color "interactive"]
     error = red bold
@@ -51,6 +51,7 @@
 [core]
     pager = less -FRSX
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    editor = nvim
 
 [diff]
     tool = vimdiff
@@ -60,6 +61,7 @@
 
 [merge]
     tool = vimdiff
+    conflictstyle = diff3
 
 [alias]
     # branch
@@ -85,6 +87,7 @@
     # merge
     m   = merge
     mom = merge origin/master
+    mod = merge origin/develop
     # push
     p   = push
     pa  = push --all
@@ -139,6 +142,7 @@
     rea = remote add
     rex = remote rm
     rem = remote rename
+    plog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 [push]
     default = matching
@@ -146,3 +150,5 @@
 [url "git@github.com:"]
     insteadof = github:
 
+[rerere]
+    enabled = 1
