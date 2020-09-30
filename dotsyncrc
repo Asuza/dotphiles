@@ -19,6 +19,7 @@ DOTFILES=.dotfiles
 dotsyncrc
 ack/ackrc
 bin:bin
+i3/config:.config/i3/config
 fish/functions:.config/fish/functions
 git/gitconfig
 git/gitignore
@@ -30,6 +31,7 @@ tmux/plugins:.tmux/plugins
 
 # Hosts to sync
 [hosts]
+raspberrypi                      type=ANY
 chromeshiba                      type=masterhost
 #host1.example.com               git=ANY                        files=custom/dotfile    #git repo, pull from anywhere and link a custom dotfile
 #host2.example.com               git=ANY                                                #git repo, pull from anywhere
