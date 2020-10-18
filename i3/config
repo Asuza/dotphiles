@@ -201,6 +201,8 @@ set $volumestep 5
 #   List cards: aplay -l
 #set $alsacard 1
 
+default_border pixel
+
 # append "-c $alsacard" without quotes to override default card
 bindsym XF86AudioRaiseVolume exec $volumepath/volume -anpl -c 1 -M Headphone -i $volumestep -t $statuscmd -u $statussig
 bindsym XF86AudioLowerVolume exec $volumepath/volume -anpl -c 1 -M Headphone -d $volumestep -t $statuscmd -u $statussig
